@@ -1,0 +1,24 @@
+/* TEAMS STARTS */
+.teams .teams-inner .teams-cards-container .teams-card{
+    flex-basis: 23%;
+} 
+.teams .teams-inner .teams-cards-container .teams-card h3{
+    font-size: 27px;
+    margin: 8px 0;
+} 
+.teams .teams-inner .teams-cards-container .teams-card img{
+    width: 100%;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+@media screen and (max-width: 480px){
+    .teams .teams-inner .teams-cards-container .teams-card{
+        margin-bottom: 40px;
+        width: 70%;
+        text-align: center;
+    } 
+}
+/* TEAMS ENDS */

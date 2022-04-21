@@ -1,0 +1,10 @@
+.navigation{
+    width: 100%;
+}
+/* .navigation .menu{
+    
+} */
+.navigation .menu .contact-link{
+    font-size: 18px;
+    cursor: pointer;
+}

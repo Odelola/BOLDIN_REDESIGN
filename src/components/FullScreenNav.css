@@ -1,0 +1,115 @@
+.fullnav{
+    margin-top: 0;
+    height: 100vh;
+    background: none;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.fullnav.active{
+    display: block;
+    animation: translateright .5s linear;
+    -webkit-animation: translateright .5s linear;
+}
+.fullnav .none{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+@keyframes translateright{
+    from{
+        transform: translateX(120%);
+        -webkit-transform: translateX(120%);
+        -moz-transform: translateX(120%);
+        -ms-transform: translateX(120%);
+        -o-transform: translateX(120%);
+}
+}
+.fullnav .fullnav-inner{
+    width: 100%;
+    height: 100%;
+}
+.fullnav .fullnav-inner .fullnav_left{
+    background: url('../images/fullscreenNavImages/header-bg.webp'), #FFFFFF;
+}
+.fullnav .fullnav-inner .fullnav_left img{
+    width: 150px;
+    height: 30px;
+}
+.fullnav .fullnav-inner .fullnav_right{
+    
+}
+.fullnav .fullnav-inner .fullnav_right .menu{
+    justify-content: right;
+}
+.fullnav .fullnav-inner .fullnav_right .menu Link{
+    justify-content: right;
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_links{
+    margin: 40px 0 60px;
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_links li{
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_links li:not(:last-child){
+    line-height: 75px;
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_links li a{
+    text-decoration: underline;
+    color: white;
+    font-size: 60px;
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_links li a:hover{
+    text-decoration: none;
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_socials{
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_socials .fullnav_socials-inner{
+    margin-top: 15px;
+}
+.fullnav .fullnav-inner .fullnav_right .fullnav_socials .fullnav_socials-inner a{
+    text-decoration: underline;
+    color: white;
+}
+@media screen and (max-width: 480px){
+    .fullnav{
+       min-height: 100vh;
+       background: #4452fe;
+    }
+    .fullnav .fullnav-inner{
+        flex-direction: column;
+        /* padding-bottom: auto; */
+    }
+    .fullnav .fullnav-inner .fullnav_left{
+        background: #4452fe;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        height: 50px !important;
+        /* padding: 0 !important; */
+        flex-basis: 20%;
+    }
+    .fullnav .fullnav-inner .fullnav_left img[alt="Boldin's Logo"]{
+        display: none;
+    }
+    .fullnav .fullnav-inner .fullnav_left img[alt="Boldin's Logo White"],
+    .fullnav .fullnav-inner .fullnav_left .mobile-nav{
+        display: block;
+        height: 30px;
+    }
+    .fullnav .fullnav-inner .fullnav_right .menu{
+        display: none;
+    }
+    .fullnav .fullnav-inner .fullnav_right .fullnav_links{
+        margin: 0 0 20px 0;
+    }
+    .fullnav .fullnav-inner .fullnav_right .fullnav_links li:not(:last-child){
+        line-height: 45px;
+    }
+    .fullnav .fullnav-inner .fullnav_right .fullnav_links li a{
+        font-size: 30px;
+    }
+}

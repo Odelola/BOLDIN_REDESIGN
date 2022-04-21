@@ -1,0 +1,184 @@
+.contact_alt{
+    background: #4452fe;
+    color: white;
+    height: 100vh;
+    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none !important;
+    z-index: 999;
+}
+.contact_alt.active{
+    display: block !important;
+    animation: translateright .5s linear;
+    -webkit-animation: translateright .5s linear;
+}
+@keyframes translateright{
+    from{
+        transform: translateX(120%);
+        -webkit-transform: translateX(120%);
+        -moz-transform: translateX(120%);
+        -ms-transform: translateX(120%);
+        -o-transform: translateX(120%);
+}
+    to{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+} 
+.contact_alt .contact-nav{
+    margin-bottom: 30px;
+}
+.contact_alt .contact-nav a{
+
+}
+.contact_alt .contact-nav #cancel{
+    width: 40px;
+    height: 32px;
+    position: relative;
+    margin-right: 28px;
+    z-index: 60;
+}
+.contact_alt .contact-nav #cancel span{
+    position: absolute;
+    display: block;
+    background: white;
+    width: 40px;
+    height: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.contact_alt .contact-nav #cancel span:first-child{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.contact_alt .contact-nav #cancel:hover span:first-child{
+    animation: fade-out .3s linear;
+    -webkit-animation: fade-out .3s linear;
+}
+@keyframes fade-out{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contact_alt .contact-nav #cancel span:last-child{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.contact_alt .contact-inner{
+    position: relative;
+    flex-basis: 75%;
+}
+.contact_alt .contact-inner .contact-heading{
+    font-size: 4.5em;
+}
+.contact_alt .contact-inner .contact-text{
+
+}
+.contact_alt .contact-inner .contact-text .mailUs{
+    color: white;
+    font-weight: 400;
+    font-size: 110%;
+}
+.contact_alt .contact-inner .contact-form{
+    margin-top: 25px;
+    width: 80%;
+}
+.contact_alt .contact-inner .contact-form .form-input{
+    margin-bottom: 40px;
+    gap: 30px;
+}
+.contact_alt .contact-inner .contact-form .form-input .form-input_single{
+    
+}
+.contact_alt .contact-inner .contact-form .form-input .form-input_single label{
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 1.1em;
+}
+.contact_alt .contact-inner .contact-form .form-input .form-input_single input{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: .9em;
+    padding: 9px 8px;
+    color: #fff;
+}
+.contact_alt .contact-inner .contact-form .form-input .form-input_single input::placeholder{
+    color: #f8f9fa;
+    font-weight: bold;
+};
+.contact_alt .contact-inner .contact-form button{
+    /* background: #fff;
+    background: red;
+    border: 2px solid red; */
+    display: none;
+};
+.contact_alt .contact-illustration{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact_alt .contact-illustration img{
+    width: 405px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-width: 480px) {
+    .contact_alt{
+        height: auto;
+    }
+    .contact_alt .contact-inner{
+        padding: 0 !important;
+        width: 100%;
+    }
+    .contact_alt .contact-inner .contact-heading{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .contact_alt .contact-inner .contact-text{
+        font-size: 700;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact_alt .contact-inner .contact-text .mailUs{
+        font-size: 100%;
+    }
+    
+    .contact_alt .contact-inner .contact-form .form-input{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact_alt .contact-inner .contact-form .form-input .form-input_single label{
+        font-size: 1em;
+    }
+    .contact_alt .contact-illustration{
+        display: none;
+    } 
+}

@@ -1,0 +1,56 @@
+.cta{
+    overflow: hidden;
+    background: #f2f7fc;
+}
+.cta .cta-inner{
+    position: relative;
+    padding: 50px 0;
+}
+.cta .cta-inner .cta-text{
+    padding: 80px 0 0 0px;
+}
+.cta .cta-inner .cta-text .section-title{
+
+}
+.cta .cta-inner .cta-text .section-text{
+    width: 108%;
+    margin-bottom: 40px;
+}
+.cta .cta-inner .cta-text a{
+    margin-top: 40px;
+}
+.cta .cta-inner .cta-image{
+}
+.cta .cta-inner .cta-image img{
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+@media screen and (max-width: 480px){
+    .cta .cta-inner{
+        flex-direction: column;
+    }
+    .cta .cta-inner .cta-text{
+        padding: 20px 0 0 0px;
+    }
+    .cta .cta-inner .cta-image{
+        position: absolute;
+    }
+    .cta .cta-inner .cta-image img{
+        opacity: 0.15;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    .cta .cta-inner .cta-text .section-text{
+        line-height: 50px;
+        width: 100%;
+    }
+    .cta .cta-inner .cta-text a{
+        margin-top: -40px;
+    }
+}

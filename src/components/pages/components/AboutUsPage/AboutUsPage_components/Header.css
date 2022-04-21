@@ -1,0 +1,124 @@
+/* BANNER STARTS */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url('../AboutUsPage_images/headerImages/astronaut.svg'), no-repeat;
+    margin-top: -20px;
+    background-size: cover;
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.banner .banner-text{
+    width: 40%;
+}
+.banner .banner-text h3 span{
+    font-weight: 700;
+}
+.banner .banner-text button{
+    margin-top: 25px;
+}
+.banner .scroll-animation{
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    display: block;
+}
+.banner .scroll-animation .mouse{
+    width: 20px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-bottom: 8px;
+}
+.banner .scroll-animation .mouse .mouse-ball{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: white;
+    margin-top: 5px;
+    display: block;
+}
+.banner .scroll-text{
+    position: absolute;
+    bottom: 4%;
+    left: 47.5%;
+    color: #FFF;
+    /* text-align: center; */
+}
+/* BANNER ENDS */
+/* MEDIA QUERIES STARTS */
+@media screen and (max-width: 480px){
+    /* BANNER STARTS */
+    .banner{
+        margin-top: 0px;
+        padding: 80px 0 35px;
+        background: #4452fe;
+        align-items: flex-start;
+    }
+    .banner .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .banner .banner-text h3{
+        /*  */
+        line-height: 50px;
+    }
+    .banner .banner-text h3 span{
+        /*  */
+        display: block;
+    }
+    .banner .banner-text p{
+        /*  */
+       font-size: 22px;
+       line-height: 30px;
+       font-weight: normal;
+    }
+    .banner .banner-text button{
+        /*  */
+        margin-top: 40px;
+    }
+    .banner .scroll-animation{
+        /*  */
+        bottom: 20%;
+    }
+    /* .banner .scroll-animation .mouse{
+        width: 20px;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 12px;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+        margin-bottom: 8px;
+}
+    .banner .scroll-animation .mouse .mouse-ball{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: white;
+        margin-top: 5px;
+        display: block;
+    } */
+    .banner .scroll-text{
+        /*  */
+        left: 43.5%;
+        bottom: 17%;
+    }
+    /* BANNER ENDS */
+}
+/* MEDIA QUERIES ENDS */

@@ -1,0 +1,173 @@
+.contact{
+    background: #4452fe;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    position: relative;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.contact.active{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    animation: translateright .25s linear;
+    -webkit-animation: translateright .25s linear;
+}
+@keyframes translateright{
+    from{
+        transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -o-transform: translateX(200%);
+}
+}
+.contact .contact-nav{
+    margin-bottom: 35px;
+}
+.contact .contact-nav a{
+
+}
+.contact .contact-nav #cancel{
+    width: 40px;
+    height: 32px;
+    position: relative;
+    margin-right: 28px;
+}
+.contact .contact-nav #cancel span{
+    position: absolute;
+    display: block;
+    background: white;
+    width: 40px;
+    height: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.contact .contact-nav #cancel span:first-child{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.contact .contact-nav #cancel:hover span:first-child{
+    animation: fade-out .3s linear;
+    -webkit-animation: fade-out .3s linear;
+}
+@keyframes fade-out{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.contact .contact-nav #cancel span:last-child{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.contact .contact-inner{
+    position: relative;
+    margin-bottom: 30px;
+}
+.contact .contact-inner .contact-heading{
+    font-size: 4.5em;
+}
+.contact .contact-inner .contact-text{
+
+}
+.contact .contact-inner .contact-text .mailUs{
+    color: white;
+    font-weight: 400;
+    font-size: 110%;
+}
+.contact .contact-inner .contact-form{
+    margin-top: 25px;
+    width: 80%;
+}
+.contact .contact-inner .contact-form .form-input{
+    margin-bottom: 25px;
+}
+.contact .contact-inner .contact-form .form-input .form-input_single{
+    
+}
+.contact .contact-inner .contact-form .form-input .form-input_single label{
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 1.1em;
+}
+.contact .contact-inner .contact-form .form-input .form-input_single input{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: .9em;
+    padding: 9px 8px;
+    color: #fff;
+}
+.contact .contact-inner .contact-form .form-input .form-input_single input::placeholder{
+    color: #f8f9fa;
+    font-weight: bold;
+};
+.contact .contact-inner .contact-form button{
+    display: none;
+}
+.contact .contact-info{
+}
+.contact .contact-info .contact-info_column p:first-child{
+    margin-bottom: 10px;
+}
+.contact .contact-bg-img{
+    position: absolute;
+    top: 57%;
+}
+@media screen and (max-width: 480px){
+    .contact .contact-nav a img{
+        width: 125px;
+    }
+    .contact .contact-inner{
+        padding: 0;
+    }
+    .contact .contact-inner .contact-heading{
+        font-size: 2em;
+    }
+    .contact .contact-inner .contact-form{
+        width: 100%;
+    }
+    .contact .contact-inner .contact-form .form-input{
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 5px;
+    }
+    .contact .contact-inner .contact-form .form-input .form-input_single{
+        margin-bottom: 25px;
+        flex-basis: 100%;
+    }
+    .contact .contact-info{
+        flex-direction: column;
+        padding: 0 !important;
+    }
+    .contact .contact-info .contact-info_column{
+        margin-bottom: 30px;
+    }
+    .contact .contact-info .contact-info_column a{
+        font-weight: normal;
+        font-size: 18px;
+    }
+}

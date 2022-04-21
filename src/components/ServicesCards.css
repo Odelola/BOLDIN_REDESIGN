@@ -1,0 +1,21 @@
+.services-cards .services-card{
+ background: url('../images/servicesImages/servicescard-bg.webp'), linear-gradient(to bottom, #4452fe, #6923eb);
+ background-size: cover;
+ padding: 45px 80px 40px 45px;
+ max-width: 250px;
+ width: 100%;
+ border-radius: 12px;
+ -webkit-border-radius: 12px;
+ -moz-border-radius: 12px;
+ -ms-border-radius: 12px;
+ -o-border-radius: 12px;
+ margin-right: 15px;
+}
+/* .services-card */
+.services-cards .services-card img{
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+.services-cards .services-card h4{
+    margin-bottom: 15px;
+}

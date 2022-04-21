@@ -1,0 +1,38 @@
+/* HERO STARTS */
+.hero{
+    margin-top: 0;
+    height: calc(100vh - 72px);
+}
+.hero .hero-inner{
+
+}
+.hero .hero-inner .hero-text button{
+    align-self: flex-start;
+}
+.hero .hero-inner .hero-image img{
+    width: 85%;
+}
+@media screen and (max-width: 480px){
+    .hero{
+        height: auto;
+    }
+    .hero .hero-inner{
+        flex-direction: column;
+    } 
+    .hero .hero-inner .hero-text{
+        text-align: center;
+    }
+    .hero .hero-inner .hero-text button{
+        align-self: center;
+    }
+    .hero .hero-inner .hero-image{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .hero-inner .hero-image img{
+        width: 45%;
+    }
+}
+/* HERO ENDS */

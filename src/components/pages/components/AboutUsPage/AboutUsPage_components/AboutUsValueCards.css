@@ -1,0 +1,36 @@
+/* ABOUTUSVALUECARDS STARTS */
+.about .about-inner .about_values_cards-container .about_values_cards{
+    margin-bottom: 25px;
+}
+.about .about-inner .about_values_cards-container .about_values_cards .about_values_card{
+    background: url('../AboutUsPage_images/aboutImages/about_value_card-bg.webp'), #4452fe;
+    border-radius: 8px;
+    padding: 55px 0px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    /* max-width: 250px; */
+    height: 300px;
+    margin-bottom: 15px;
+}
+.about .about-inner .about_values_cards-container .about_values_cards .about_values_card .about_values_carde_image{
+    /* width: 60%; */
+    object-fit: cover;
+}
+.about .about-inner .about_values_cards-container .about_values_cards .about_values_card_text{
+    line-height: 40px;
+}
+@media screen and (max-width: 480px){
+    .about .about-inner .about_values_cards-container .about_values_cards .about_values_card{
+        flex-basis: 100%;
+    }
+    .about .about-inner .about_values_cards-container .about_values_cards .about_values_card_text{
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 1.3px;
+        text-align: center;
+    }
+}
+/* ABOUTUSVALUECARDS ENDS */

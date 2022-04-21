@@ -1,0 +1,83 @@
+/* OFFERINGS STARTS */
+.offerings{
+    background: url('../ServicesPage_images/offeringImages/offeringBg.webp'), #f4f4ff;
+    position: relative;
+    margin: 0px 0 480px 0;
+}
+.offerings > h3{
+    padding-top: 70px;
+}
+.offerings .offerings-inner{
+    margin-top: 100px;
+    position: relative;
+}
+.offerings .offerings-inner .offerings-column{
+    margin-bottom: 100px;
+}
+.offerings .offerings-inner .offerings-column:last-child{
+    margin-bottom: 150px;
+}
+.offerings .offerings-inner .offerings-column .offerings-column_title h3{
+    font-size: 27px;
+}
+.offerings .offerings-inner .offerings-column .offerings-column_lists{
+    margin-top: 15px;
+}
+.offerings .offerings-inner .offerings-column .offerings-column_lists li{
+    font-size: 20px;
+    line-height: 35px;
+    color: #212529;
+}
+.offerings .offerings-inner .offerings-column .offerings-column_lists li span{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: linear-gradient(#4452fe, #6923eb);
+    display: inline-block;
+    margin-right: 10px;
+}
+.offerings .engagement-model{
+    width: 65%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 55px 60px;
+    background: linear-gradient(#4452fe, #6923eb);
+    position: absolute;
+    left: 50%;
+    bottom: -35%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.offerings .engagement-model h3{
+    margin-bottom: 55px;
+}
+.offerings .engagement-model p:last-child{
+    margin-top: 25px;
+}
+@media screen and (max-width: 480px){
+    .offerings .offerings-inner .offerings-column{
+        flex-direction: column;
+    }
+    .offerings .offerings-inner .offerings-column .offerings-column_title h3{
+        margin-bottom: 10px;
+    }
+    .offerings .offerings-inner .offerings-column:last-child{
+        margin-bottom: 0px;
+    }
+    .offerings .engagement-model{
+        width: 100%;
+        padding: 40px 45px;
+        bottom: -30%;
+    }
+}
+/* OFFERINGS ENDS */

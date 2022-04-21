@@ -1,0 +1,23 @@
+.services-cards{
+    display: none;
+}
+.services-cards .services-card{
+    background: linear-gradient(135deg, #4452fe, #6923eb);
+    padding: 15px 40px;
+    width: 340px;
+    height: auto;
+    color: white
+}
+.services-cards .services-card .services-card_image{
+    background: red;
+}
+.services-cards .services-card .services-card_text{
+    color: red;
+}
+/* .services-cards .services-card{
+    background: linear-gradient(135deg, #4452fe, #6923eb);
+    padding: 15px 40px;
+    width: 340px;
+    height: auto;
+    color: white
+} */
