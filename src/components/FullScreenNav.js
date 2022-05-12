@@ -10,8 +10,15 @@ function FullScreenNav(props) {
   function removeMenuActive(){
     fullNav.current.classList.toggle('active');
   }
+  
+    const mallamText = props.className;
+    console.log(mallamText)
+  // if(props.className !== mallamText){
+  //   console.log("bug")
+  // }
   return (
-    <header id="fullnav" className={props.className ? "fullnav active": "fullnav"} ref={fullNav}>
+    <>
+      {props.className && <header id="fullnav" className={props.className ? "fullnav active": "fullnav"} ref={fullNav}>
       <div className="fullnav-inner d-flex">
         <div className="fullnav_left column-50 default-padding">
           <img src={companyLogo} alt="Boldin's Logo" />
@@ -48,7 +55,8 @@ function FullScreenNav(props) {
             </div>
         </div>
       </div>
-    </header>
+    </header>}
+    </>
   );
 }
 
