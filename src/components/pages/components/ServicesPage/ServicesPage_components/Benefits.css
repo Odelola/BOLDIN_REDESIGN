@@ -1,6 +1,6 @@
 /* BENEFITS STARTS */
 .benefits{
-
+    overflow-x: hidden;
 }
 .benefits > h3{
     margin-bottom: 60px;
