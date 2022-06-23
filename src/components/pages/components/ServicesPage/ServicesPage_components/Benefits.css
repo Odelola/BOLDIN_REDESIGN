@@ -1,13 +1,12 @@
 /* BENEFITS STARTS */
 .benefits{
-    overflow-x: hidden;
 }
 .benefits > h3{
     margin-bottom: 60px;
 }
 
 .benefits .benefits-inner{
-
+    overflow-x: hidden;
 }
 .benefits .benefits-inner .benefits-columns{
     position: relative;
